@@ -36,7 +36,7 @@ server.tool(
     install: z.array(z.string()).optional().describe("pip packages to install before running"),
   },
   async ({ code, template, timeout, install }) => {
-    const tmpl = template ? `"${template}"` : "None";
+    const tmpl = template ? JSON.stringify(template) : "None";
     const timeoutSec = timeout || 30;
     const pipPkgs = install && install.length > 0 ? install : [];
 
