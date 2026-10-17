@@ -1,0 +1,19 @@
+{
+  "name": "e2b-sandbox-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that gives AI agents safe code execution via E2B sandboxes",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "e2b-sandbox-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^4.6.7"
+  },
+  "keywords": ["mcp", "e2b", "sandbox", "code-execution", "ai-agents"],
+  "license": "MIT"
+}
